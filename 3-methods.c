@@ -9,7 +9,7 @@
 
 int mod(void)
 {
-	int i, j, mod;
+	int a, b, mod;
 
 	/* Not enough nodes to swap */
 	if (top == NULL || top->next == NULL)
