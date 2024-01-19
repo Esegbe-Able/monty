@@ -2,12 +2,12 @@
 #include "extern.h"
 
 /**
- *modulo - performs modulus operation on
+ *mod - performs modulus operation on
  *the top top values on the stack
  *Return: 0 if successful else return -12
  */
 
-int modulo(void)
+int mod(void)
 {
 	int i, j, mod;
 
@@ -20,9 +20,9 @@ int modulo(void)
 
 	if (top->n == 0)
 		return (-21);
-	i = pop();
-	j = pop();
-	mod = j % i;
+	a = pop();
+	b = pop();
+	mod = b % a;
 	push(mod);
 	return (0);
 }

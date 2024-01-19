@@ -18,7 +18,7 @@ void nop(void)
  */
 int add(void)
 {
-	int i, j, sum;
+	int a, b, sum;
 
 	/* Not enough nodes to swap */
 	if (top == NULL || top->next == NULL)
@@ -26,22 +26,22 @@ int add(void)
 		return (-7);
 	}
 
-	i = pop();
-	j = pop();
-	sum = i + j;
+	a = pop();
+	b = pop();
+	sum = a + b;
 	push(sum);
 	return (0);
 }
 
 /**
- *subtract - it subtracts the top two values
+ *sub - it subtracts the top two values
  *on the stack
  *
  *Return: 0 if successful else -8
  */
-int subtract(void)
+int sub(void)
 {
-	int i, j, sub;
+	int a, b, sub;
 
 	/* Not enough nodes to swap */
 	if (top == NULL || top->next == NULL)
@@ -49,23 +49,23 @@ int subtract(void)
 		return (-8);
 	}
 
-	i = pop();
-	j = pop();
-	sub = j - i;
+	a = pop();
+	b = pop();
+	sub = b - a;
 	push(sub);
 	return (0);
 }
 
 /**
- *_divide - _divide function divides the top two
+ *_div - _divide function divides the top two
  *values on the stack
  *
  *Return: 0 if successful else if stack is 
  < 2 return -9 else return -10
  */
-int _divide(void)
+int _div(void)
 {
-	int i, j, div;
+	int a, b, div;
 
 	/* Not enough nodes to swap */
 	if (top == NULL || top->next == NULL)
@@ -73,11 +73,11 @@ int _divide(void)
 		return (-9);
 	}
 
-	i = pop();
-	if (i == 0)
+	a = pop();
+	if (a == 0)
 		return (-10);
-	j = pop();
-	div = j / i;
+	b = pop();
+	div = b / a;
 	push(div);
 	return (0);
 }
@@ -89,7 +89,7 @@ int _divide(void)
  */
 int mul(void)
 {
-	int i, j, mul;
+	int a, b, mul;
 
 	/* Not enough nodes to swap */
 	if (top == NULL || top->next == NULL)
@@ -97,9 +97,9 @@ int mul(void)
 		return (-11);
 	}
 
-	i = pop();
-	j = pop();
-	mul = j * i;
+	a = pop();
+	b = pop();
+	mul = b * a;
 	push(mul);
 	return (0);
 }

@@ -66,10 +66,10 @@ int pop(void)
 }
 
 /**
- *_full - This function checks if stack is full
+ *is_full - This function checks if stack is full
  *Return: 1 if true and 0 if otherwise
  */
-int _full(void)
+int is_full(void)
 {
 	if (top->next == NULL)
 		return (1);
@@ -77,10 +77,10 @@ int _full(void)
 }
 
 /**
- *_empty - It checks if stack is empty
+ *is_empty - It checks if stack is empty
  *Return: 1 if true and 0 if otherwise
  */
-int _empty(void)
+int is_empty(void)
 {
 	if (top == NULL)
 		return (1);

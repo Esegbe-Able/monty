@@ -2,12 +2,12 @@
 #include "extern.h"
 
 /**
- *compile_op - compile_op function proccess
+ *compile - compile_op function proccess
  *the opcode within file
  *@mfile: file to read from
  */
 
-void compile_op(FILE *mfile)
+void compile(FILE *mfile)
 {
 	char *buff = NULL, *token, *tokens[1024];
 	size_t init_byts = 0, stat = 0, neg = -1;

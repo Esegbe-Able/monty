@@ -1,12 +1,12 @@
 #include "extern.h"
 #include "monty.h"
 /**
- * Print - The function prints the value at
+ * pint - The function prints the value at
  * the top of the stack
  * Return: return the value printed
  */
 
-int Print(void)
+int pint(void)
 {
 	int item;
 
@@ -38,11 +38,11 @@ void free_list(stack_t *head)
 }
 
 /**
- *change - change function swaps the top two
+ *swap - change function swaps the top two
  *on the stack
  *Return: 0 if successful else -3
  */
-int change(void)
+int swap(void)
 {
 	stack_t *first = top;
 	stack_t *second;
@@ -69,9 +69,9 @@ int change(void)
 }
 
 /**
- *printall - It prints all items in stack
+ *pall - It prints all items in stack
  */
-void printall(void)
+void pall(void)
 {
 	stack_t *tmp = top;
 

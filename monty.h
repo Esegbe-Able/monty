@@ -44,15 +44,15 @@ typedef struct instruction_s
 
 /*Function declearations*/
 
-int Print(void);
+int pint(void);
 
-void printall(void);
+void pall(void);
 
 stack_t *makenode(int val);
 
-int _empty(void);
+int is_empty(void);
 
-int _full(void);
+int is_full(void);
 
 int pop(void);
 
@@ -60,25 +60,25 @@ int push(int value);
 
 void free_list(stack_t *head);
 
-int change(void);
+int swap(void);
 
 int opcode_match(char *cmd);
 
 void opcode_processor(char **toks, char *buff, FILE *mfile, int l);
 
-void compile_op(FILE *mfile);
+void compile(FILE *mfile);
 
 int digit_check(char *num);
 
 int add(void);
 
-int subtract(void);
+int sub(void);
 
-int _divide(void);
+int _div(void);
 
 int mul(void);
 
-int modulo(void);
+int mod(void);
 
 int pchar(void);
 
