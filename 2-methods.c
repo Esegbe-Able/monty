@@ -61,7 +61,7 @@ int sub(void)
  *values on the stack
  *
  *Return: 0 if successful else if stack is 
- < 2 return -9 else return -10
+ *< 2 return -9 else return -10
  */
 int _div(void)
 {

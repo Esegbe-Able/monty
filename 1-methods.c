@@ -63,7 +63,7 @@ int swap(void)
 	second->next = first;
 	second->prev = NULL;
 
-	top = second; 
+	top = second;
 
 	return (0);
 }
